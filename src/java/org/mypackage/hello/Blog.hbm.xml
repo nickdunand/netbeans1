@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-Apr-2018 11:05:40 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.mypackage.hello.Blog" table="blog" catalog="sql11230110" optimistic-lock="version">
+    <!-- class name="org.mypackage.hello.Blog" table="blog" catalog="test" optimistic-lock="version"-->
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="surname" type="string">
+            <column name="Surname" length="50" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="Firstname" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

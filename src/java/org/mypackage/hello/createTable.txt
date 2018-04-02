@@ -1,0 +1,7 @@
+
+CREATE TABLE blog (
+    ID int NOT NULL AUTO_INCREMENT,
+    FIRSTNAME varchar(255) NOT NULL,
+    SURNAME varchar(255),
+    PRIMARY KEY (ID)
+);

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29-Mar-2018 00:28:47 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.mypackage.hello.Blog" table="BLOG" schema="APP">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="sequence"></generator>
+        </id>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="50" />
+        </property>
+        <property name="surname" type="string">
+            <column name="SURNAME" length="50" not-null="true" unique="true" />
+        </property>
+    </class>
+</hibernate-mapping>
